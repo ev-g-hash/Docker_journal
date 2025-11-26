@@ -1,0 +1,39 @@
+# Создадим .gitignore
+echo "# Django
+*.log
+*.sqlite3
+db.sqlite3
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Static files
+staticfiles/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.dockerignore
+Dockerfile
+
+# Amvera
+.amvera/
+" > .gitignore
+
+# Инициализируем Git
+git init
+git add .
+git commit -m "Initial commit: Django journal app ready for Amvera"
